@@ -1,5 +1,7 @@
 class apache (
   $apachename   = $::apache::params::apachename,
+  $conffile   = $::apache::params::conffile,
+  $confsource = $::apache::params::confsource,
 ) inherits ::apache::params {
     package { 'apache':
     name    => $apachename,
