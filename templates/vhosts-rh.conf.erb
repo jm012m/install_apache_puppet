@@ -14,7 +14,6 @@
 SSLEngine on
         SSLCertificateFile /etc/httpd/ssl/xxxxx.crt
         SSLCertificateKeyFile /etc/httpd/ssl/xxxxx.key
-        SSLCACertificateFile /etc/httpd/ssl/xxxxxx.crt
   Options FollowSymLinks
   DocumentRoot /var/www/<%= @servername -%>/public_html/
     ErrorLog /var/www/<%- @servername -%>/logs/error.log
